@@ -8,7 +8,15 @@
 </head>
 
 <body>
-    <h1>Hello Developers</h1>
+    <h1>ADD STUDENTS FORM</h1>
+    <form method="POST">
+
+        {% csrf_token %}
+        {{ add_form }}
+        <br>
+        <button type="submit">Add Student</button>
+
+    </form>
 </body>
 
 </html>
